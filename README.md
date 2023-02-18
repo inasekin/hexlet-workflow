@@ -1,4 +1,34 @@
-![example workflow](https://github.com/inasekin/hexlet-workflow/actions/workflows/hello-world.yml/badge.svg)
+![example workflow](https://github.com/inasekin/hexlet-workflow/actions/workflows/ci-actions.yml/badge.svg)
+
+# Starting boilerplate of [Strapi](https://strapi.io/) application + CI (Github actions)
+
+## System requirements
+
+* NodeJS >= 18
+* NPM >= 6.x
+* Make
+
+## Using
+
+```sh
+make setup
+make start
+```
+
+## Run tests
+
+```sh
+make test
+```
+
+## Run linter
+
+```sh
+make lint
+```
+
+---
+
 # Непрерывная интеграция (CI)
 
 <img src="./github-actions-processing.png">

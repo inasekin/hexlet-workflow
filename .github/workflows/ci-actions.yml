@@ -1,7 +1,10 @@
-# file: .github/workflows/hello-world.yml
-name: hello-world
+# file: .github/workflows/ci-actions.yml
+name: ci-actions
 # on – определяет события, которые запускают воркфлоу
-on: push
+on:
+  - push
+  - pull_request
+
 jobs:
   # build – произвольно выбранное имя задания
   # их может быть больше одного
@@ -13,6 +16,6 @@ jobs:
       # checkout – клонирует репозиторий
       - uses: actions/checkout@v2
       # run – произвольная bash-команда
-      # ls -la выведет содержимое текущего репозитория
-      - run: ls -la
-      - run: make say-hello
+      - run: make setup
+      - run: make test
+      - run: make lint
